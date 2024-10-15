@@ -1,18 +1,20 @@
 # MHyNet-PC: A Multi-modal Hybrid No-Reference Framework for Point Cloud Quality Assessment
 
-This is the official GitHub repository that refers to the paper [MHyNet-PC: A Multi-modal Hybrid No-Reference Framework for Point Cloud Quality Assessment] that has been presented at the conference IEEE 13th International Conference on Image Processing Theory, Tools and Applications (IPTA) 2024.
+This is the official GitHub repository that refers to the paper MHyNet-PC: A Multi-modal Hybrid No-Reference Framework for Point Cloud Quality Assessment that has been presented at the conference IEEE 13th International Conference on Image Processing Theory, Tools and Applications (IPTA) 2024.
 
+```
 J. Chatterjee, M. Creemers, J. Coosemans and M. T. Vega, "MHyNet-PC: A Multi-modal Hybrid No-Reference Framework for Point Cloud Quality Assessment," 2024 Thirteenth International Conference on Image Processing Theory, Tools and Applications (IPTA), Rabat, Morocco, 2024, pp. 1-6.
+```
 
 This github has a main branch, containing all the necessary files to train your own Point Cloud Quality Assessment (PCQA) model, assess the quality of a single point cloud, as well as the necessary files needed to run the PCQA-tool.
 
 ## Motivation
-The motivation for this work started from the fact that as of today, no efficient No-Reference (NR) PCQA model exsits that is able to accurately predict the quality of a 3D-Point cloud. Because of this, we propose a hybrid multimodal model calles MMSIN that harnesses the benefits from both a Resnet based Deep learning network and a Statistical feature extraction model.
+The motivation for this work started from the fact that as of today, no efficient No-Reference (NR) Point Cloud Quality Assessement model exsits that is able to accurately predict the quality of a 3D-Point cloud. Because of this, we propose a hybrid multimodal model calles MHyNet-PC that harnesses the benefits from both a Resnet based Deep learning network and a Statistical feature extraction model.
 
 ## Framework
 ![Overview of the entire model](https://github.com/Jit-INP/MHyNetPC-main/blob/main/imgs/complete_model.png)
 
-Our approach leverages two feature modalities to predict quality metrics. The first being features from the 3D data itself, while the second modality contains features extracted by first projecting a point cloud to a 2D plane. Features are extracted from two modalities using both a statistical machine learning modal and a deep learning model. These features are then enhanced through mutual guidance using symmetric cross-modal attention, resulting in a final feature representation consisting both of the original and enhanced features. Ultimately, this feature representation is decoded into a single quality prediction throughthe quality regression model.
+Our approach leverages two feature modalities to predict quality metrics. The first being features from the 3D data itself, while the second modality contains features extracted by first projecting a point cloud to a 2D plane. Features are extracted from two modalities using both a 3D Statistical Feature Extraction Model and a 2D Image Feature Extraction Model. These features are then enhanced through mutual guidance using symmetric cross-modal attention (Data Fusion Model), resulting in a final feature representation consisting both of the original and enhanced features. Ultimately, this feature representation is decoded into a single quality prediction throughthe quality regression model.
 
 ## Getting Started.
 In order to train the model, several components and libraries need to be installed.
@@ -84,11 +86,16 @@ The code also contains a point cloud quality assessment tool. In order to use it
 # Citation
 
 If you find our work and code helpful, please consider cite:
+
+```
 J. Chatterjee, M. Creemers, J. Coosemans and M. T. Vega, "MHyNet-PC: A Multi-modal Hybrid No-Reference Framework for Point Cloud Quality Assessment," 2024 Thirteenth International Conference on Image Processing Theory, Tools and Applications (IPTA), Rabat, Morocco, 2024, pp. 1-6.
+```
 
 This code repository is based on some other works.
+
 If you find them helpful, please cite:
 
+```
 @article{zhang2022mm,
   title={MM-PCQA: Multi-Modal Learning for No-reference Point Cloud Quality Assessment},
   author={Zhang, Zicheng and Sun, Wei and Min, Xiongkuo and Zhou, Quan and He, Jun and Wang, Qiyuan and Zhai, Guangtao},
@@ -105,7 +112,7 @@ If you find them helpful, please cite:
   number={},
   pages={1-1},
   doi={10.1109/TCSVT.2022.3186894}}
-
+```
 
 
 
