@@ -10,7 +10,7 @@ This github has a main branch, containing all the necessary files to train your 
 The motivation for this work started from the fact that as of today, no efficient No-Reference (NR) PCQA model exsits that is able to accurately predict the quality of a 3D-Point cloud. Because of this, we propose a hybrid multimodal model calles MMSIN that harnesses the benefits from both a Resnet based Deep learning network and a Statistical feature extraction model.
 
 ## Framework
-![Overview of the entire model](https://github.com/Jit-INP/MHyNetPC/blob/main/imgs/complete_model.png)
+![Overview of the entire model](https://github.com/Jit-INP/MHyNetPC-main/blob/main/imgs/complete_model.png)
 
 Our approach leverages two feature modalities to predict quality metrics. The first being features from the 3D data itself, while the second modality contains features extracted by first projecting a point cloud to a 2D plane. Features are extracted from two modalities using both a statistical machine learning modal and a deep learning model. These features are then enhanced through mutual guidance using symmetric cross-modal attention, resulting in a final feature representation consisting both of the original and enhanced features. Ultimately, this feature representation is decoded into a single quality prediction throughthe quality regression model.
 
@@ -21,7 +21,7 @@ First, make sure that the correct Nvidia drivers are installed. We trained the m
 ```bash
   nvidia-smi
 ```
-To run the code itself, several packages need to be installed. An overview is given in [requirements.txt](https://github.com/Jit-INP/MHyNetPC/blob/main/requirements.txt). Installing all libraries at once can be done by running the following command:
+To run the code itself, several packages need to be installed. An overview is given in [requirements.txt](https://github.com/Jit-INP/MHyNetPC-main/blob/main/requirements.txt). Installing all libraries at once can be done by running the following command:
 
 ```bash
 pip install -r requirements.txt
