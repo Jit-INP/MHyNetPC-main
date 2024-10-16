@@ -3,7 +3,7 @@
 This is the official GitHub repository that refers to the paper MHyNet-PC: A Multi-modal Hybrid No-Reference Framework for Point Cloud Quality Assessment that has been presented at the conference IEEE 13th International Conference on Image Processing Theory, Tools and Applications (IPTA) 2024.
 
 ```
-J. Chatterjee, M. Creemers, J. Coosemans and M. T. Vega, "MHyNet-PC: A Multi-modal Hybrid No-Reference Framework for Point Cloud Quality Assessment," 2024 Thirteenth International Conference on Image Processing Theory, Tools and Applications (IPTA), Rabat, Morocco, 2024, pp. 1-6.
+J. Chatterjee, M. Creemers, J. Coosemans and M. Torres Vega, "MHyNet-PC: A Multi-modal Hybrid No-Reference Framework for Point Cloud Quality Assessment," 2024 Thirteenth International Conference on Image Processing Theory, Tools and Applications (IPTA), Rabat, Morocco, 2024, pp. 1-6.
 ```
 
 This github has a main branch, containing all the necessary files to train your own Point Cloud Quality Assessment (PCQA) model, assess the quality of a single point cloud, as well as the necessary files needed to run the PCQA-tool.
@@ -85,10 +85,10 @@ The code also contains a point cloud quality assessment tool. In order to use it
 
 # Citation
 
-If you find our work and code helpful, please consider cite:
+If you find our work and code helpful, please cite:
 
 ```
-J. Chatterjee, M. Creemers, J. Coosemans and M. T. Vega, "MHyNet-PC: A Multi-modal Hybrid No-Reference Framework for Point Cloud Quality Assessment," 2024 Thirteenth International Conference on Image Processing Theory, Tools and Applications (IPTA), Rabat, Morocco, 2024, pp. 1-6.
+J. Chatterjee, M. Creemers, J. Coosemans and M. Torres Vega, "MHyNet-PC: A Multi-modal Hybrid No-Reference Framework for Point Cloud Quality Assessment," 2024 Thirteenth International Conference on Image Processing Theory, Tools and Applications (IPTA), Rabat, Morocco, 2024, pp. 1-6.
 ```
 
 This code repository is based on some other works.
